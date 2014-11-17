@@ -1,0 +1,5 @@
+#!/bin/sh
+
+. /home/tim/magento-1.9.0.1-2/scripts/setenv.sh
+
+exec /home/tim/magento-1.9.0.1-2/varnish/bin/.varnishlog.bin -n /home/tim/magento-1.9.0.1-2/varnish/var/varnish "$@"

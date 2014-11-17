@@ -1,0 +1,6 @@
+#!/bin/sh
+
+PATH="/home/tim/magento-1.9.0.1-2/varnish/bin:/home/tim/magento-1.9.0.1-2/sqlite/bin:/home/tim/magento-1.9.0.1-2/php/bin:/home/tim/magento-1.9.0.1-2/mysql/bin:/home/tim/magento-1.9.0.1-2/apache2/bin:/home/tim/magento-1.9.0.1-2/common/bin:$PATH"
+
+exec /bin/bash --noprofile --norc
+                    

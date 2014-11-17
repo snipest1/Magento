@@ -1,0 +1,8 @@
+#!/bin/sh
+LD_LIBRARY_PATH="/home/tim/magento-1.9.0.1-2/common/lib:$LD_LIBRARY_PATH"	   
+DYLD_LIBRARY_PATH="/home/tim/magento-1.9.0.1-2/common/lib:$DYLD_LIBRARY_PATH"	   
+OPENSSL_CONF="/home/tim/magento-1.9.0.1-2/common/openssl/openssl.cnf"
+export LD_LIBRARY_PATH
+export DYLD_LIBRARY_PATH
+export OPENSSL_CONF
+exec /home/tim/magento-1.9.0.1-2/common/bin/openssl.bin "$@"

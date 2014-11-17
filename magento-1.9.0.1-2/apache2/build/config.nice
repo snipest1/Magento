@@ -1,0 +1,34 @@
+#! /bin/sh
+#
+# Created by configure
+
+CC="gcc"; export CC
+CFLAGS="-I/home/tim/magento-1.9.0.1-2/common/include -fPIC -m32"; export CFLAGS
+CPPFLAGS="-I/home/tim/magento-1.9.0.1-2/common/include"; export CPPFLAGS
+LDFLAGS="-L/home/tim/magento-1.9.0.1-2/common/lib -liconv"; export LDFLAGS
+"./configure" \
+"--prefix=/home/tim/magento-1.9.0.1-2/apache2" \
+"--enable-so" \
+"--enable-mods-shared=most" \
+"--disable-auth_dbm" \
+"--without-berkeley-db" \
+"--enable-deflate" \
+"--enable-ssl" \
+"--with-ssl=/home/tim/magento-1.9.0.1-2/common" \
+"--enable-proxy" \
+"--enable-proxy-http" \
+"--enable-proxy-balancer" \
+"--enable-rewrite" \
+"--with-ldap" \
+"--enable-authnz-ldap" \
+"--enable-ldap" \
+"--with-apr=/home/tim/magento-1.9.0.1-2/common/bin/apr-1-config" \
+"--with-apu=/home/tim/magento-1.9.0.1-2/common/bin/apr-1-config" \
+"--with-pcre=/home/tim/magento-1.9.0.1-2/common/bin/pcre-config" \
+"--enable-mpms-shared=all" \
+"--with-mpm=prefork" \
+"CC=gcc" \
+"CFLAGS=-I/home/tim/magento-1.9.0.1-2/common/include -fPIC -m32" \
+"LDFLAGS=-L/home/tim/magento-1.9.0.1-2/common/lib -liconv" \
+"CPPFLAGS=-I/home/tim/magento-1.9.0.1-2/common/include" \
+"$@"
